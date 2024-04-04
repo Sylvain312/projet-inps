@@ -1,0 +1,188 @@
+\hypertarget{classPoly}{}\doxysection{Poly Class Reference}
+\label{classPoly}\index{Poly@{Poly}}
+
+
+Class of matrices that contain the solutions.  
+
+
+
+
+{\ttfamily \#include $<$Poly.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoly_aa3def076b74bed67904976ad4f9fe9b1}\label{classPoly_aa3def076b74bed67904976ad4f9fe9b1}} 
+\mbox{\hyperlink{classPoly_aa3def076b74bed67904976ad4f9fe9b1}{Poly}} ()
+\begin{DoxyCompactList}\small\item\em Class of matrices that contain the solutions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoly_a0c3c2ff153996e3ffbde016ea30ac62f}{calc\+Hermite}} (int, arma\+::vec)
+\begin{DoxyCompactList}\small\item\em Function that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. \end{DoxyCompactList}\item 
+arma\+::vec \mbox{\hyperlink{classPoly_af6bdeaa15631cf25d84564317655e37d}{hermite}} (int n)
+\begin{DoxyCompactList}\small\item\em Function which return the values of H for a specific value of n. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoly_a578ff87c5a7d0340ff0f0514a8a77ec6}{calc\+Laguerre}} (int, int, arma\+::vec)
+\begin{DoxyCompactList}\small\item\em Function that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. \end{DoxyCompactList}\item 
+arma\+::vec \mbox{\hyperlink{classPoly_a1cf87a643d00e7703243aae67dfdf7e6}{laguerre}} (int, int)
+\begin{DoxyCompactList}\small\item\em Function which return the values of H for a specific value of n. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPoly_a8abc4089286ca1cb496e8bf42c8f616c}\label{classPoly_a8abc4089286ca1cb496e8bf42c8f616c}} 
+arma\+::mat {\bfseries psi\+\_\+matrix}
+\item 
+\mbox{\Hypertarget{classPoly_abbc746e502852184bdf83911442b4937}\label{classPoly_abbc746e502852184bdf83911442b4937}} 
+arma\+::mat {\bfseries H}
+\item 
+\mbox{\Hypertarget{classPoly_a50e9bc06ff9e2a8aac049503c9f66022}\label{classPoly_a50e9bc06ff9e2a8aac049503c9f66022}} 
+arma\+::cube {\bfseries L}
+\item 
+\mbox{\Hypertarget{classPoly_afd963e6b4bae8fae7ca68079e06d8e4b}\label{classPoly_afd963e6b4bae8fae7ca68079e06d8e4b}} 
+arma\+::vec {\bfseries E}
+\item 
+\mbox{\Hypertarget{classPoly_abc1be33df6e5af8b106eb81e11245b80}\label{classPoly_abc1be33df6e5af8b106eb81e11245b80}} 
+arma\+::colvec {\bfseries F}
+\item 
+\mbox{\Hypertarget{classPoly_a476f39caa2d8a276c9efdedcfdaf0dfc}\label{classPoly_a476f39caa2d8a276c9efdedcfdaf0dfc}} 
+arma\+::mat {\bfseries scal}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of matrices that contain the solutions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & number of row \\
+\hline
+{\em col} & number of column \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoly_a0c3c2ff153996e3ffbde016ea30ac62f}\label{classPoly_a0c3c2ff153996e3ffbde016ea30ac62f}} 
+\index{Poly@{Poly}!calcHermite@{calcHermite}}
+\index{calcHermite@{calcHermite}!Poly@{Poly}}
+\doxysubsubsection{\texorpdfstring{calcHermite()}{calcHermite()}}
+{\footnotesize\ttfamily void Poly\+::calc\+Hermite (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{arma\+::vec}]{z }\end{DoxyParamCaption})}
+
+
+
+Function that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. 
+
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matrix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoly_a578ff87c5a7d0340ff0f0514a8a77ec6}\label{classPoly_a578ff87c5a7d0340ff0f0514a8a77ec6}} 
+\index{Poly@{Poly}!calcLaguerre@{calcLaguerre}}
+\index{calcLaguerre@{calcLaguerre}!Poly@{Poly}}
+\doxysubsubsection{\texorpdfstring{calcLaguerre()}{calcLaguerre()}}
+{\footnotesize\ttfamily void Poly\+::calc\+Laguerre (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{int}]{n,  }\item[{arma\+::vec}]{z }\end{DoxyParamCaption})}
+
+
+
+Function that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. 
+
+Function that evaluates the Laguerre cube.
+
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+@assigns the value of the Laguerre cube to L (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the Laguerre matrix \+: L.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoly_af6bdeaa15631cf25d84564317655e37d}\label{classPoly_af6bdeaa15631cf25d84564317655e37d}} 
+\index{Poly@{Poly}!hermite@{hermite}}
+\index{hermite@{hermite}!Poly@{Poly}}
+\doxysubsubsection{\texorpdfstring{hermite()}{hermite()}}
+{\footnotesize\ttfamily arma\+::vec Poly\+::hermite (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Function which return the values of H for a specific value of n. 
+
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matrix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPoly_a1cf87a643d00e7703243aae67dfdf7e6}\label{classPoly_a1cf87a643d00e7703243aae67dfdf7e6}} 
+\index{Poly@{Poly}!laguerre@{laguerre}}
+\index{laguerre@{laguerre}!Poly@{Poly}}
+\doxysubsubsection{\texorpdfstring{laguerre()}{laguerre()}}
+{\footnotesize\ttfamily arma\+::vec Poly\+::laguerre (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Function which return the values of H for a specific value of n. 
+
+Function which return the values of L for a specific value of n and m.
+
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matrix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+@assigns the value of the Laguerre cube to L (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the Laguerre cube \+: L.
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/Poly.\+h\item 
+src/Poly.\+cpp\end{DoxyCompactItemize}

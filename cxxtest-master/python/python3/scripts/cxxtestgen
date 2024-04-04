@@ -1,0 +1,5 @@
+#! /usr/bin/env
+
+import cxxtest.cxxtestgen
+
+cxxtest.cxxtestgen.main()

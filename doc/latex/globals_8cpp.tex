@@ -1,0 +1,112 @@
+\hypertarget{globals_8cpp}{}\doxysection{src/globals.cpp File Reference}
+\label{globals_8cpp}\index{src/globals.cpp@{src/globals.cpp}}
+{\ttfamily \#include $<$armadillo$>$}\newline
+{\ttfamily \#include \char`\"{}../headers/globals.\+h\char`\"{}}\newline
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{globals_8cpp_a56b38b1892ee54713aade6da553bacda}{constants\+::nb\+\_\+level}} = 8
+\item 
+int \mbox{\hyperlink{globals_8cpp_a35a387de0361149db650afa253d4fd5d}{constants\+::nb\+\_\+points}} = 2001
+\item 
+double \mbox{\hyperlink{globals_8cpp_a57ee4af96c043750f5a380d25dbc9a5d}{constants\+::hbar\+\_\+easy}} = 1.
+\item 
+double \mbox{\hyperlink{globals_8cpp_a6f1a4e0312ff8cb4dd67788f553cc5a2}{constants\+::w\+\_\+easy}} = 1.
+\item 
+double \mbox{\hyperlink{globals_8cpp_ab6042f0b4e1f92c1185af9293ca00a17}{constants\+::m\+\_\+easy}} = 1.
+\item 
+double \mbox{\hyperlink{globals_8cpp_adb6ea63753efe9d5320ff2be736267d2}{constants\+::h}} = 6.\+62607015e-\/34
+\item 
+double \mbox{\hyperlink{globals_8cpp_ac891710ad52197aadeea7562a4ae220e}{constants\+::hbar}} = h / (2$\ast$arma\+::datum\+::pi)
+\item 
+double \mbox{\hyperlink{globals_8cpp_a4d1e3845d43468ccdf684a0ea00e9adc}{constants\+::c}} = 2.\+99792458e8
+\item 
+double \mbox{\hyperlink{globals_8cpp_aef4d85bb0d3014cd7c350a8c2e520fe7}{constants\+::w\+\_\+n}} = 5.\+091666e12
+\item 
+\mbox{\Hypertarget{globals_8cpp_a8b2582a2cba1db4b2f38f77fa066b3c2}\label{globals_8cpp_a8b2582a2cba1db4b2f38f77fa066b3c2}} 
+double {\bfseries constants\+::w\+\_\+e} = 4.\+1666e12
+\item 
+double \mbox{\hyperlink{globals_8cpp_a89bc4ba0ca4a4b53c064c373abc391f3}{constants\+::m\+\_\+e}} = 9.\+1094e-\/31
+\item 
+\mbox{\Hypertarget{globals_8cpp_a10686b71d46aecf7c672d4066930483a}\label{globals_8cpp_a10686b71d46aecf7c672d4066930483a}} 
+double {\bfseries constants\+::m\+\_\+n} = 1.\+6749e-\/27
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of all the global constants.
+
+There are two modes\+: simple mode and difficult mode. In simple mode, all the constants are initialised at 1. In difficult mode, the constants are in SI units. 
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{globals_8cpp_a4d1e3845d43468ccdf684a0ea00e9adc}\label{globals_8cpp_a4d1e3845d43468ccdf684a0ea00e9adc}} 
+\index{globals.cpp@{globals.cpp}!c@{c}}
+\index{c@{c}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily double constants\+::c = 2.\+99792458e8}
+
+c is the celery of light \mbox{\Hypertarget{globals_8cpp_adb6ea63753efe9d5320ff2be736267d2}\label{globals_8cpp_adb6ea63753efe9d5320ff2be736267d2}} 
+\index{globals.cpp@{globals.cpp}!h@{h}}
+\index{h@{h}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily double constants\+::h = 6.\+62607015e-\/34}
+
+h is Plank\textquotesingle{}s constant
+
+h is Plank\textquotesingle{}s constant hbar equals to h/(2$\ast$pi) \mbox{\Hypertarget{globals_8cpp_ac891710ad52197aadeea7562a4ae220e}\label{globals_8cpp_ac891710ad52197aadeea7562a4ae220e}} 
+\index{globals.cpp@{globals.cpp}!hbar@{hbar}}
+\index{hbar@{hbar}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{hbar}{hbar}}
+{\footnotesize\ttfamily double constants\+::hbar = h / (2$\ast$arma\+::datum\+::pi)}
+
+hbar equals to h/(2$\ast$pi) with h the Plank\textquotesingle{}s constant \mbox{\Hypertarget{globals_8cpp_a57ee4af96c043750f5a380d25dbc9a5d}\label{globals_8cpp_a57ee4af96c043750f5a380d25dbc9a5d}} 
+\index{globals.cpp@{globals.cpp}!hbar\_easy@{hbar\_easy}}
+\index{hbar\_easy@{hbar\_easy}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{hbar\_easy}{hbar\_easy}}
+{\footnotesize\ttfamily double constants\+::hbar\+\_\+easy = 1.}
+
+hbar equals to h/(2$\ast$pi) with h the Plank\textquotesingle{}s constant
+
+For the easy mode, all constants are set to 1
+
+hbar equals to h/(2$\ast$pi) with h the Plank\textquotesingle{}s constant \mbox{\Hypertarget{globals_8cpp_a89bc4ba0ca4a4b53c064c373abc391f3}\label{globals_8cpp_a89bc4ba0ca4a4b53c064c373abc391f3}} 
+\index{globals.cpp@{globals.cpp}!m\_e@{m\_e}}
+\index{m\_e@{m\_e}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_e}{m\_e}}
+{\footnotesize\ttfamily double constants\+::m\+\_\+e = 9.\+1094e-\/31}
+
+m\+\_\+e is the mass of an electron, in kg m\+\_\+n is the mass of a neutron, in kg
+
+The quantum oscillator equation use a mass, of a neutron or an electron, depending of the system
+
+m\+\_\+e is the mass of an electron, in Mev/c$^\wedge$2 m\+\_\+n is the mass of a neutron, in Mev/c$^\wedge$2 \mbox{\Hypertarget{globals_8cpp_ab6042f0b4e1f92c1185af9293ca00a17}\label{globals_8cpp_ab6042f0b4e1f92c1185af9293ca00a17}} 
+\index{globals.cpp@{globals.cpp}!m\_easy@{m\_easy}}
+\index{m\_easy@{m\_easy}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{m\_easy}{m\_easy}}
+{\footnotesize\ttfamily double constants\+::m\+\_\+easy = 1.}
+
+m is the mass \mbox{\Hypertarget{globals_8cpp_a56b38b1892ee54713aade6da553bacda}\label{globals_8cpp_a56b38b1892ee54713aade6da553bacda}} 
+\index{globals.cpp@{globals.cpp}!nb\_level@{nb\_level}}
+\index{nb\_level@{nb\_level}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{nb\_level}{nb\_level}}
+{\footnotesize\ttfamily int constants\+::nb\+\_\+level = 8}
+
+number of level of energy \mbox{\Hypertarget{globals_8cpp_a35a387de0361149db650afa253d4fd5d}\label{globals_8cpp_a35a387de0361149db650afa253d4fd5d}} 
+\index{globals.cpp@{globals.cpp}!nb\_points@{nb\_points}}
+\index{nb\_points@{nb\_points}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{nb\_points}{nb\_points}}
+{\footnotesize\ttfamily int constants\+::nb\+\_\+points = 2001}
+
+number of level of evolution \mbox{\Hypertarget{globals_8cpp_a6f1a4e0312ff8cb4dd67788f553cc5a2}\label{globals_8cpp_a6f1a4e0312ff8cb4dd67788f553cc5a2}} 
+\index{globals.cpp@{globals.cpp}!w\_easy@{w\_easy}}
+\index{w\_easy@{w\_easy}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{w\_easy}{w\_easy}}
+{\footnotesize\ttfamily double constants\+::w\+\_\+easy = 1.}
+
+w is the pulsation of the harmonic oscillator \mbox{\Hypertarget{globals_8cpp_aef4d85bb0d3014cd7c350a8c2e520fe7}\label{globals_8cpp_aef4d85bb0d3014cd7c350a8c2e520fe7}} 
+\index{globals.cpp@{globals.cpp}!w\_n@{w\_n}}
+\index{w\_n@{w\_n}!globals.cpp@{globals.cpp}}
+\doxysubsubsection{\texorpdfstring{w\_n}{w\_n}}
+{\footnotesize\ttfamily double constants\+::w\+\_\+n = 5.\+091666e12}
+
+omega 

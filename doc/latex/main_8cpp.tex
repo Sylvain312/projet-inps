@@ -1,0 +1,57 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}../headers/\+Poly.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../headers/basis.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+arma\+::mat \mbox{\hyperlink{main_8cpp_ad1384adf6303a14e7aad0f9d42f612e0}{naive\+\_\+algo}} (arma\+::vec r, arma\+::vec z)
+\begin{DoxyCompactList}\small\item\em Naive algorithme given in the project presentation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8cpp_ae68dfbcaf6b264f1b7f6b723e14e3965}\label{main_8cpp_ae68dfbcaf6b264f1b7f6b723e14e3965}} 
+arma\+::mat {\bfseries last\+\_\+calc} (arma\+::vec r, arma\+::vec z)
+\item 
+\mbox{\Hypertarget{main_8cpp_a4b59b0c22eb46c0ccf356c9cae1c787f}\label{main_8cpp_a4b59b0c22eb46c0ccf356c9cae1c787f}} 
+std\+::string {\bfseries cube\+To\+Df3} (const arma\+::cube \&m)
+\item 
+\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8cpp_ae2ff89de09546884215ec0371b6b08e1}\label{main_8cpp_ae2ff89de09546884215ec0371b6b08e1}} 
+arma\+::mat {\bfseries rho}
+\item 
+\mbox{\Hypertarget{main_8cpp_a1caaafe50b0835b72fa610bce8fb1f18}\label{main_8cpp_a1caaafe50b0835b72fa610bce8fb1f18}} 
+\mbox{\hyperlink{classBasis}{Basis}} {\bfseries basis} (1.\+935801664793151, 2.\+829683956491218, 14, 1.\+3)
+\item 
+\mbox{\Hypertarget{main_8cpp_a6474bbef60bcb1ed9b933eecc191c76d}\label{main_8cpp_a6474bbef60bcb1ed9b933eecc191c76d}} 
+arma\+::icube {\bfseries rho\+\_\+indice} = arma\+::icube(basis.\+m\+Max, basis.\+n\+Max(0), basis.\+n\+\_\+z\+Max(0, 0))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ad1384adf6303a14e7aad0f9d42f612e0}\label{main_8cpp_ad1384adf6303a14e7aad0f9d42f612e0}} 
+\index{main.cpp@{main.cpp}!naive\_algo@{naive\_algo}}
+\index{naive\_algo@{naive\_algo}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{naive\_algo()}{naive\_algo()}}
+{\footnotesize\ttfamily arma\+::mat naive\+\_\+algo (\begin{DoxyParamCaption}\item[{arma\+::vec}]{r,  }\item[{arma\+::vec}]{z }\end{DoxyParamCaption})}
+
+
+
+Naive algorithme given in the project presentation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & r-\/ axis values \\
+\hline
+{\em z} & z-\/ axis values\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the nuclear local density matrix 
+\end{DoxyReturn}

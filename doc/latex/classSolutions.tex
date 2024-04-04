@@ -1,0 +1,233 @@
+\hypertarget{classSolutions}{}\doxysection{Solutions Class Reference}
+\label{classSolutions}\index{Solutions@{Solutions}}
+
+
+Class of matrices that contain the solutions.  
+
+
+
+
+{\ttfamily \#include $<$solutions.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSolutions_a7e09debc04602a97490e37e3d917969c}{Solutions}} (int row=constants\+::nb\+\_\+level, int col=constants\+::nb\+\_\+points)
+\begin{DoxyCompactList}\small\item\em Class of matrices that contain the solutions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSolutions_a4a08c4dba4ca2b1a397a389dd630f6f7}{fact}} (int)
+\begin{DoxyCompactList}\small\item\em Fonction that calculate n factorial. \end{DoxyCompactList}\item 
+arma\+::rowvec \mbox{\hyperlink{classSolutions_a3699c88c49cf9cc13031a8670ada075f}{set\+\_\+mesh}} (double, double, int)
+\begin{DoxyCompactList}\small\item\em Fonction that calculate the points where we will evaluate the level of energy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolutions_a4712177198f4a74b0812a7682150896b}{set\+\_\+hermit}} (arma\+::rowvec)
+\begin{DoxyCompactList}\small\item\em Fonction that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolutions_a2ed5e375ab73d2eb17b7e317f657bcb0}{set\+\_\+vec\+\_\+exp}} (double, double, double, arma\+::rowvec)
+\begin{DoxyCompactList}\small\item\em Fonction that assign the value of the vector exp needed to the attribute E. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolutions_aa1e230a264f9c0d60f009446cf183e61}{set\+\_\+vec\+\_\+F}} ()
+\begin{DoxyCompactList}\small\item\em Fonction that set a vector needed for the calculation of psi, it is the factor depending on n (exception taken on the hermit factor) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolutions_a10f392d8ece81ac65c1b20dc05871ddc}{generate\+\_\+psi}} (double, double, double, arma\+::rowvec)
+\begin{DoxyCompactList}\small\item\em Fonction that set the matrix psi, solutions of our problem. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSolutions_af7acfe82ad2f0091485286563322b56a}{set\+\_\+scal}} (arma\+::rowvec, arma\+::rowvec)
+\begin{DoxyCompactList}\small\item\em this function computes the scalar product beetween each pairs of psi solutions and put the result in the scal matrix \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSolutions_afec1b4bd4ef391104eea4d285432d773}\label{classSolutions_afec1b4bd4ef391104eea4d285432d773}} 
+arma\+::mat {\bfseries psi\+\_\+matrix}
+\item 
+\mbox{\Hypertarget{classSolutions_aaad026acd59cbcf87525c945960e662a}\label{classSolutions_aaad026acd59cbcf87525c945960e662a}} 
+arma\+::mat {\bfseries H}
+\item 
+\mbox{\Hypertarget{classSolutions_a5198acc2d3fa283971b8a61747932dbb}\label{classSolutions_a5198acc2d3fa283971b8a61747932dbb}} 
+arma\+::rowvec {\bfseries E}
+\item 
+\mbox{\Hypertarget{classSolutions_a62569278f85e14b0d40f243005fec278}\label{classSolutions_a62569278f85e14b0d40f243005fec278}} 
+arma\+::colvec {\bfseries F}
+\item 
+\mbox{\Hypertarget{classSolutions_a3d9e2dd6167b524819210364275421c1}\label{classSolutions_a3d9e2dd6167b524819210364275421c1}} 
+arma\+::mat {\bfseries scal}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class of matrices that contain the solutions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & number of row \\
+\hline
+{\em col} & number of column \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSolutions_a7e09debc04602a97490e37e3d917969c}\label{classSolutions_a7e09debc04602a97490e37e3d917969c}} 
+\index{Solutions@{Solutions}!Solutions@{Solutions}}
+\index{Solutions@{Solutions}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{Solutions()}{Solutions()}}
+{\footnotesize\ttfamily Solutions\+::\+Solutions (\begin{DoxyParamCaption}\item[{int}]{row = {\ttfamily constants\+:\+:nb\+\_\+level},  }\item[{int}]{col = {\ttfamily constants\+:\+:nb\+\_\+points} }\end{DoxyParamCaption})}
+
+
+
+Class of matrices that contain the solutions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em row} & number of row \\
+\hline
+{\em col} & number of column \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolutions_a4a08c4dba4ca2b1a397a389dd630f6f7}\label{classSolutions_a4a08c4dba4ca2b1a397a389dd630f6f7}} 
+\index{Solutions@{Solutions}!fact@{fact}}
+\index{fact@{fact}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{fact()}{fact()}}
+{\footnotesize\ttfamily int Solutions\+::fact (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Fonction that calculate n factorial. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & the factorial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+n! 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolutions_a10f392d8ece81ac65c1b20dc05871ddc}\label{classSolutions_a10f392d8ece81ac65c1b20dc05871ddc}} 
+\index{Solutions@{Solutions}!generate\_psi@{generate\_psi}}
+\index{generate\_psi@{generate\_psi}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{generate\_psi()}{generate\_psi()}}
+{\footnotesize\ttfamily void Solutions\+::generate\+\_\+psi (\begin{DoxyParamCaption}\item[{double}]{m,  }\item[{double}]{w,  }\item[{double}]{hb,  }\item[{arma\+::rowvec}]{z }\end{DoxyParamCaption})}
+
+
+
+Fonction that set the matrix psi, solutions of our problem. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & mass (depends of the mode and system chosen by the user) \\
+\hline
+{\em w} & omega (depends of the mode and system chosen by the user) \\
+\hline
+{\em hb} & h\+\_\+bar (depends of the mode chosen by the user) \\
+\hline
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolutions_a4712177198f4a74b0812a7682150896b}\label{classSolutions_a4712177198f4a74b0812a7682150896b}} 
+\index{Solutions@{Solutions}!set\_hermit@{set\_hermit}}
+\index{set\_hermit@{set\_hermit}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{set\_hermit()}{set\_hermit()}}
+{\footnotesize\ttfamily void Solutions\+::set\+\_\+hermit (\begin{DoxyParamCaption}\item[{arma\+::rowvec}]{z }\end{DoxyParamCaption})}
+
+
+
+Fonction that evaluates the Hermit matrix -\/$>$ We want to evaluate the matrix at points sqrt(m$\ast$w/hbarre)$\ast$z. 
+
+@assigns the value of the Hermit matrix to H (attribute of the class) \begin{DoxyAttention}{Attention}
+requires that the constructor has been called to set the size of the hermit matix \+: H .
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolutions_a3699c88c49cf9cc13031a8670ada075f}\label{classSolutions_a3699c88c49cf9cc13031a8670ada075f}} 
+\index{Solutions@{Solutions}!set\_mesh@{set\_mesh}}
+\index{set\_mesh@{set\_mesh}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{set\_mesh()}{set\_mesh()}}
+{\footnotesize\ttfamily arma\+::rowvec Solutions\+::set\+\_\+mesh (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Fonction that calculate the points where we will evaluate the level of energy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min} & the minimum of the interval \\
+\hline
+{\em max} & the maximum of the interval \\
+\hline
+{\em nb} & nb of points in the interval\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a row vector that contains all the points where the solution will be evaluate 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolutions_af7acfe82ad2f0091485286563322b56a}\label{classSolutions_af7acfe82ad2f0091485286563322b56a}} 
+\index{Solutions@{Solutions}!set\_scal@{set\_scal}}
+\index{set\_scal@{set\_scal}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{set\_scal()}{set\_scal()}}
+{\footnotesize\ttfamily void Solutions\+::set\+\_\+scal (\begin{DoxyParamCaption}\item[{arma\+::rowvec}]{points,  }\item[{arma\+::rowvec}]{weights }\end{DoxyParamCaption})}
+
+
+
+this function computes the scalar product beetween each pairs of psi solutions and put the result in the scal matrix 
+
+\begin{DoxyAttention}{Attention}
+set\+\_\+vec\+\_\+F should have already been called the weights and points vectors have been obtain by running on python\+: numpy.\+polynomial.\+hermite.\+hermgauss((n$\ast$n)//2+1) where n is the number of level of energy
+\end{DoxyAttention}
+for n=8\+: arma\+::rowvec points=\{-\/7.\+25385182, -\/6.\+54165545, -\/5.\+94807118, -\/5.\+414929 , -\/4.\+92002852,-\/4.\+45191115, -\/4.\+00367161, -\/3.\+57072198, -\/3.\+14979668, -\/2.\+73844582, -\/2.\+33475115, -\/1.\+93715458, -\/1.\+54434826, -\/1.\+1552002 , -\/0.\+76870138, -\/0.\+38392601, 0. , 0.\+38392601, 0.\+76870138, 1.\+1552002 , 1.\+54434826, 1.\+93715458, 2.\+33475115, 2.\+73844582, 3.\+14979668, 3.\+57072198, 4.\+00367161, 4.\+45191115, 4.\+92002852, 5.\+414929 , 5.\+94807118, 6.\+54165545, 7.\+25385182\}; arma\+::rowvec weights=\{1.\+15331622e-\/23, 1.\+65709474e-\/19, 2.\+40778568e-\/16, 9.\+43481416e-\/14, 1.\+47398094e-\/11, 1.\+12892225e-\/09, 4.\+80774568e-\/08, 1.\+23769337e-\/06, 2.\+04236841e-\/05, 2.\+25442771e-\/04, 1.\+71845464e-\/03, 9.\+26568997e-\/03, 3.\+59879823e-\/02, 1.\+02069080e-\/01, 2.\+13493931e-\/01, 3.\+31552001e-\/01, 3.\+83785267e-\/01, 3.\+31552001e-\/01, 2.\+13493931e-\/01, 1.\+02069080e-\/01, 3.\+59879823e-\/02, 9.\+26568997e-\/03, 1.\+71845464e-\/03, 2.\+25442771e-\/04, 2.\+04236841e-\/05, 1.\+23769337e-\/06, 4.\+80774568e-\/08, 1.\+12892225e-\/09, 1.\+47398094e-\/11, 9.\+43481416e-\/14, 2.\+40778568e-\/16, 1.\+65709474e-\/19, 1.\+15331622e-\/23\};
+
+
+\begin{DoxyParams}{Parameters}
+{\em points} & a vector of the points on which the hermit polynomials sould be evaluated to use quadrature rule \\
+\hline
+{\em weights} & a vector of the weigths matching the points vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSolutions_a2ed5e375ab73d2eb17b7e317f657bcb0}\label{classSolutions_a2ed5e375ab73d2eb17b7e317f657bcb0}} 
+\index{Solutions@{Solutions}!set\_vec\_exp@{set\_vec\_exp}}
+\index{set\_vec\_exp@{set\_vec\_exp}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{set\_vec\_exp()}{set\_vec\_exp()}}
+{\footnotesize\ttfamily void Solutions\+::set\+\_\+vec\+\_\+exp (\begin{DoxyParamCaption}\item[{double}]{m,  }\item[{double}]{w,  }\item[{double}]{hb,  }\item[{arma\+::rowvec}]{z }\end{DoxyParamCaption})}
+
+
+
+Fonction that assign the value of the vector exp needed to the attribute E. 
+
+\begin{DoxyAttention}{Attention}
+requires that the mesh method has already been called
+\end{DoxyAttention}
+
+\begin{DoxyParams}{Parameters}
+{\em m} & mass (depends of the mode and system chosen by the user) \\
+\hline
+{\em w} & omega (depends of the mode and system chosen by the user) \\
+\hline
+{\em hb} & habr (depends of the mode chosen by the user) \\
+\hline
+{\em z} & the vector with the points where we evaluate the function\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolutions_aa1e230a264f9c0d60f009446cf183e61}\label{classSolutions_aa1e230a264f9c0d60f009446cf183e61}} 
+\index{Solutions@{Solutions}!set\_vec\_F@{set\_vec\_F}}
+\index{set\_vec\_F@{set\_vec\_F}!Solutions@{Solutions}}
+\doxysubsubsection{\texorpdfstring{set\_vec\_F()}{set\_vec\_F()}}
+{\footnotesize\ttfamily void Solutions\+::set\+\_\+vec\+\_\+F (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction that set a vector needed for the calculation of psi, it is the factor depending on n (exception taken on the hermit factor) 
+
+This function has no argument for only the maximal n is required and the Solutions\+::F has already be declared in the Constructor and we can therefore infer it from the size of F 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/\mbox{\hyperlink{solutions_8h}{solutions.\+h}}\item 
+src/\mbox{\hyperlink{solutions_8cpp}{solutions.\+cpp}}\end{DoxyCompactItemize}

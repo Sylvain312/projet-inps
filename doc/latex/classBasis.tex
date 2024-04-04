@@ -1,0 +1,133 @@
+\hypertarget{classBasis}{}\doxysection{Basis Class Reference}
+\label{classBasis}\index{Basis@{Basis}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasis_a79a154fabf5f316a85fa7ab9038d2fb0}\label{classBasis_a79a154fabf5f316a85fa7ab9038d2fb0}} 
+{\bfseries Basis} (double br, double bz, int N, double Q)
+\item 
+double \mbox{\hyperlink{classBasis_a190f838ea0e7d72a4827c1dd83b9af7a}{v}} (int N, double Q, int i)
+\begin{DoxyCompactList}\small\item\em Function which is used to calculate m\+Max and n\+\_\+z\+Max values of the quantum number. \end{DoxyCompactList}\item 
+arma\+::vec \mbox{\hyperlink{classBasis_ae5645b0cbf32ffa6164c7b4262b96904}{r\+Part}} (arma\+::vec r, int m, int n)
+\begin{DoxyCompactList}\small\item\em The function that returns the r part of the psi function. \end{DoxyCompactList}\item 
+arma\+::vec \mbox{\hyperlink{classBasis_aa3e3e50a5f0c6b3c69fe1088a96a01b0}{z\+Part}} (arma\+::vec z, int nz)
+\begin{DoxyCompactList}\small\item\em The function that returns the z part of the psi function. \end{DoxyCompactList}\item 
+arma\+::mat \mbox{\hyperlink{classBasis_ae202e9aa7770a00e5f56caa035694b41}{psi}} (int m, int n, int n\+\_\+z, arma\+::vec z\+Vals, arma\+::vec r\+Vals)
+\begin{DoxyCompactList}\small\item\em Function which calculates the psi-\/function on all couple(z, r) given in the parameters z\+Vals and r\+Vals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBasis_ab6095856207deef6f202fdc127d7c076}\label{classBasis_ab6095856207deef6f202fdc127d7c076}} 
+int \mbox{\hyperlink{classBasis_ab6095856207deef6f202fdc127d7c076}{m\+Max}}
+\begin{DoxyCompactList}\small\item\em values for each quantum number \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBasis_a611451ea36afb2b83e64e6f12cc8f4f7}\label{classBasis_a611451ea36afb2b83e64e6f12cc8f4f7}} 
+arma\+::ivec {\bfseries n\+Max}
+\item 
+\mbox{\Hypertarget{classBasis_a457e804b99cbfb30f81bf2bb6d3f794e}\label{classBasis_a457e804b99cbfb30f81bf2bb6d3f794e}} 
+arma\+::imat {\bfseries n\+\_\+z\+Max}
+\item 
+\mbox{\Hypertarget{classBasis_aba3185c6a7b52abc688bafebd8f8f7ff}\label{classBasis_aba3185c6a7b52abc688bafebd8f8f7ff}} 
+double {\bfseries bz}
+\item 
+\mbox{\Hypertarget{classBasis_a2fb4317b2fca047de6e0bdaa393c0fff}\label{classBasis_a2fb4317b2fca047de6e0bdaa393c0fff}} 
+double {\bfseries br}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBasis_ae202e9aa7770a00e5f56caa035694b41}\label{classBasis_ae202e9aa7770a00e5f56caa035694b41}} 
+\index{Basis@{Basis}!psi@{psi}}
+\index{psi@{psi}!Basis@{Basis}}
+\doxysubsubsection{\texorpdfstring{psi()}{psi()}}
+{\footnotesize\ttfamily arma\+::mat Basis\+::psi (\begin{DoxyParamCaption}\item[{int}]{m,  }\item[{int}]{n,  }\item[{int}]{n\+\_\+z,  }\item[{arma\+::vec}]{z\+Vals,  }\item[{arma\+::vec}]{r\+Vals }\end{DoxyParamCaption})}
+
+
+
+Function which calculates the psi-\/function on all couple(z, r) given in the parameters z\+Vals and r\+Vals. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & a quantum number \\
+\hline
+{\em n} & a quantum number \\
+\hline
+{\em n\+\_\+z} & a quantum number \\
+\hline
+{\em z\+Vals} & the set of values on the z-\/axis \\
+\hline
+{\em r\+Vals} & the set of values on the radius\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a matrix containing the psi function for every (r,z) couple. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBasis_ae5645b0cbf32ffa6164c7b4262b96904}\label{classBasis_ae5645b0cbf32ffa6164c7b4262b96904}} 
+\index{Basis@{Basis}!rPart@{rPart}}
+\index{rPart@{rPart}!Basis@{Basis}}
+\doxysubsubsection{\texorpdfstring{rPart()}{rPart()}}
+{\footnotesize\ttfamily arma\+::vec Basis\+::r\+Part (\begin{DoxyParamCaption}\item[{arma\+::vec}]{r,  }\item[{int}]{m,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+The function that returns the r part of the psi function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em r} & a vector of radius values \\
+\hline
+{\em m} & a quantum number \\
+\hline
+{\em n} & a quantum number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector containing the r part of the psi function. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBasis_a190f838ea0e7d72a4827c1dd83b9af7a}\label{classBasis_a190f838ea0e7d72a4827c1dd83b9af7a}} 
+\index{Basis@{Basis}!v@{v}}
+\index{v@{v}!Basis@{Basis}}
+\doxysubsubsection{\texorpdfstring{v()}{v()}}
+{\footnotesize\ttfamily double Basis\+::v (\begin{DoxyParamCaption}\item[{int}]{N,  }\item[{double}]{Q,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Function which is used to calculate m\+Max and n\+\_\+z\+Max values of the quantum number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & \\
+\hline
+{\em Q} & \\
+\hline
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBasis_aa3e3e50a5f0c6b3c69fe1088a96a01b0}\label{classBasis_aa3e3e50a5f0c6b3c69fe1088a96a01b0}} 
+\index{Basis@{Basis}!zPart@{zPart}}
+\index{zPart@{zPart}!Basis@{Basis}}
+\doxysubsubsection{\texorpdfstring{zPart()}{zPart()}}
+{\footnotesize\ttfamily arma\+::vec Basis\+::z\+Part (\begin{DoxyParamCaption}\item[{arma\+::vec}]{z,  }\item[{int}]{nz }\end{DoxyParamCaption})}
+
+
+
+The function that returns the z part of the psi function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em z} & a vector of z-\/axis values \\
+\hline
+{\em nz} & a quantum number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector containing the z part of the psi function. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/basis.\+h\item 
+src/\mbox{\hyperlink{basis_8cpp}{basis.\+cpp}}\end{DoxyCompactItemize}

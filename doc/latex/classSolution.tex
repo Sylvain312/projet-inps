@@ -1,0 +1,49 @@
+\hypertarget{classSolution}{}\doxysection{Solution Class Reference}
+\label{classSolution}\index{Solution@{Solution}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSolution_a849dce1b4ead0bb08ba89ac19121a64b}{factorial}} (int)
+\item 
+arma\+::mat \mbox{\hyperlink{classSolution_abc729135356d3f93dc2a10ff9ff4e11a}{solution\+\_\+matrix}} (double zmin, double zmax, int k, int n)
+\begin{DoxyCompactList}\small\item\em it creates the matrix of the solutions evaluated on k evenly spaced points between zmin and zmax for the (n+1) first energy levels (up to the nth level) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSolution_a849dce1b4ead0bb08ba89ac19121a64b}\label{classSolution_a849dce1b4ead0bb08ba89ac19121a64b}} 
+\index{Solution@{Solution}!factorial@{factorial}}
+\index{factorial@{factorial}!Solution@{Solution}}
+\doxysubsubsection{\texorpdfstring{factorial()}{factorial()}}
+{\footnotesize\ttfamily int Solution\+::factorial (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+it calculates the factorial of the parameter
+
+it is an auxiliary function to the solution\+\_\+matrix method
+
+Fonction that calculate a factorial
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & \+: number of the factorial \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an int corresponding af the factorial of the argument 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSolution_abc729135356d3f93dc2a10ff9ff4e11a}\label{classSolution_abc729135356d3f93dc2a10ff9ff4e11a}} 
+\index{Solution@{Solution}!solution\_matrix@{solution\_matrix}}
+\index{solution\_matrix@{solution\_matrix}!Solution@{Solution}}
+\doxysubsubsection{\texorpdfstring{solution\_matrix()}{solution\_matrix()}}
+{\footnotesize\ttfamily arma\+::mat Solution\+::solution\+\_\+matrix (\begin{DoxyParamCaption}\item[{double}]{zmin,  }\item[{double}]{zmax,  }\item[{int}]{k,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+it creates the matrix of the solutions evaluated on k evenly spaced points between zmin and zmax for the (n+1) first energy levels (up to the nth level) 
+
+the columns each matches one level of energy from the lowest to the highest and the rows each matches one point from zmin to zmax. The returned matrix is of size (k+1,n+1) ~\newline
+ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+headers/solutions.\+h\item 
+src/\mbox{\hyperlink{solutions_8cpp}{solutions.\+cpp}}\end{DoxyCompactItemize}

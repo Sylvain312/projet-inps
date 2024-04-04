@@ -1,0 +1,15 @@
+$$ \psi_n\left(z \right) =\frac{1}{\sqrt{2^nn!}}\left(\frac{m\omega}{\pi\hbar} \right)^{\frac{1}{4}}\exp{\left( -\frac{m\omega z^2}{2\hbar}\right)} H_n\left( \sqrt{\frac{m\omega}{\hbar}}z\right)$$
+$$\deg\left( H_n\right)=n$$
+$$F_n=\frac{1}{\sqrt{2^nn!}}$$
+$$C=\left(\frac{m\omega}{\pi\hbar} \right)^{\frac{1}{4}}$$
+$$E=\exp{\left( -\frac{m\omega z^2}{2\hbar}\right)}$$
+$$T=\sqrt{\frac{m\omega}{\hbar}}$$
+$$ \psi_n\left(z \right) =F_n\times C\times E\times H_n\left( Tz\right)$$
+$$ \int_{-\infty}^{+\infty}\psi_m^*\left(z \right)\psi_n\left(z \right)dz=\int_{-\infty}^{+\infty}F_m\times F_n\times C^2\times E^2\times H_m\left( Tz\right)\times H_n\left( Tz\right)dz$$
+$$ \int_{-\infty}^{+\infty}\psi_m^*\left(z \right)\psi_n\left(z \right)dz=F_m\times F_n\times C^2\times\int_{-\infty}^{+\infty}\exp{\left( -\frac{m\omega z^2}{\hbar}\right)}\times H_m\left( Tz\right)\times H_n\left( Tz\right)dz$$
+$$ Z^2=\frac{m\omega z^2}{\hbar} ; Z=z\sqrt{\frac{m\omega}{\hbar}}$$
+$$ \int_{-\infty}^{+\infty}\psi_m^*\left(z \right)\psi_n\left(z \right)dz=F_m\times F_n\times C^2\times\int_{-\infty}^{+\infty}\sqrt{\frac{\hbar}{m\omega}}\times\exp^{-Z^2}\times H_m\left( Z\right)\times H_n\left( Z\right)dz$$
+$$ \int_{-\infty}^{+\infty}\psi_m^*\left(z \right)\psi_n\left(z \right)dz=F_m\times F_n\times\sqrt{\frac{1}{\pi}}\times\int_{-\infty}^{+\infty}\exp^{-Z^2}\times H_m\left( Z\right)\times H_n\left( Z\right)dz$$
+$$\int_{-\infty}^{+\infty}\exp^{-Z^2}\times H_m\left( Z\right)\times H_n\left( Z\right)dz=\sum_{i=0}^{k-1}w_i\times H_m\left( z_i\right)\times H_n\left( z_i\right)$$
+$$\deg\left(H_m\times H_n\right) =m\times n\leq 2k-1\Rightarrow k\geq\frac{1+m\times n}{2}\Rightarrow k\geq\left\lfloor\frac{m\times n}{2}\right\rfloor+1\Rightarrow k=\left\lfloor\frac{n_{max}^2}{2}\right\rfloor+1$$
+$$ \int_{-\infty}^{+\infty}\psi_m^*\left(z \right)\psi_n\left(z \right)dz=F_m\times F_n\times\sqrt{\frac{1}{\pi}}\times\sum_{i=0}^{n_{max}^2-1}w_i\times H_m\left( z_i\right)\times H_n\left( z_i\right)$$
